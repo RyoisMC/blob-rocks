@@ -391,7 +391,6 @@ const blobs = [
   "gentleblob.png",
   "jakeblob.png",
   "kirbyblob.png",
-  "LICENSE",
   "nellyblob.png",
   "nikoblob.png",
   "notlikeblob.png",
@@ -404,7 +403,7 @@ const blobs = [
   "rickblob.png",
   "thinkingwithblobs.png",
   "wolfiriblob.png",
-  "wumpusblob.png",
+  "wumpusblob.png"
 ];
 const blob = blobs[Math.floor(Math.random() * blobs.length)];
 import "particles.js";
@@ -438,12 +437,12 @@ export default {
             },
             image: {
               src: `/blobs/${blob}`,
-              width: 100,
-              height: 100,
+              width: 125,
+              height: 125,
             },
           },
           opacity: {
-            value: 0.5932624625202434,
+            value: 0.5,
             random: false,
             anim: {
               enable: false,
@@ -453,7 +452,7 @@ export default {
             },
           },
           size: {
-            value: 16.03412060865523,
+            value: 16,
             random: true,
             anim: {
               enable: false,
@@ -532,6 +531,14 @@ export default {
 
 <style scoped>
 #particles-js {
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.body-particles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 </style>

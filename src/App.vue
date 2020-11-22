@@ -23,7 +23,7 @@ html {
   overflow: hidden;
 }
 #app {
-  background-image: url("/blobbanner.jpg");
+  background-image: url("/blobbanner.webp");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
