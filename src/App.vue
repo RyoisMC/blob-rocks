@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <particles/>
+    <particles />
   </div>
 </template>
 
@@ -10,22 +10,23 @@ import particles from "./components/particles.vue";
 export default {
   name: "App",
   components: {
-    particles
-  }
+    particles,
+  },
 };
 </script>
 
 <style>
-body, html {
-    margin:0;
-    height:100%;
-    overflow:hidden;
+body,
+html {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 #app {
-    background-image:url("https://pcmr.rocks/blobbanner.jpg");
-    height:100%;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:cover
+  background-image: url("/blobbanner.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
